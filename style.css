@@ -20,7 +20,7 @@ html{
 } 
 .navi ul li{
     list-style: none;
-     margin: 0 50px; 
+     margin: 0 50px ; 
     display: inline-block;
     position: relative;
 }
@@ -47,7 +47,7 @@ html{
 }
  .logo{
     width: 120px;
-    cursor: pointer;
+    cursor: default;
     border-radius: 50%;
  }
 
@@ -57,6 +57,8 @@ html{
     height: 300px;
     border-radius: 50%;
     margin-top: 100px;
+    border-color: aqua;
+    border: 20px;
 }
 .about{
     width:100%;
@@ -69,11 +71,13 @@ html{
 .text p{
     margin: auto;
     font-size: 30px;
-    color: #e1c149;
+    color: black;
     font-weight: bold;
     position: relative;
     display: inline-block;
     z-index: 1;
+    cursor: default;
+    transition: 0.5s;
 }
 
 .text p::after{
@@ -84,9 +88,18 @@ html{
     left: 0px;
     top: -10px;
     z-index: -1;
+    transition: 0.5s;
     border-radius: 10px;
     background-color: #6F8FAF;
     
+}
+.text p:hover::after{
+    transform: translateY(-5px);
+    background-color: #ffdb58;
+}
+.text p:hover{
+    color: black;
+    transform: translateY(-5px);
 }
 .content{
     color: #6F8FAF;
@@ -97,11 +110,32 @@ html{
     font-family: fantasy;
 
 }
+@media only screen and (max-width: 750px) {
+    .content{
+        padding-left: 50px;
+        font-size: 15px;
+    }
+    .navi{
+        margin-left: 10px;
+    }
+    .logo{
+        width: 100px;
+    }
+    .navi ul li{
+        display: flex;
+        margin: 0;
+    }
+    .mine
+    {
+        width: 200px;
+        height: 200px;
+    }
+} 
 span{
     color: #ffdb58;
 }
 .text-box{
-    margin: auto;
+    margin: 50px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -173,19 +207,19 @@ span{
 }
 .hob img{
     width: 100%;
-    height: 320px;
+    height: 78%;
     border-radius: 30px;
 }
 .over{
     height: 78%;
     width: 100%;
     position: relative;
-    top: -325px;
-    border-radius: 10px;
+    top: -390px;
+    border-radius: 30px;
     cursor: pointer;
-    background: linear-gradient(grey,#009688);
+    background: linear-gradient(grey,red);
     opacity: 0;
-    transition: 0.75s;
+    transition: 1s;
 }
 .hob:hover .over{
     opacity:1;
@@ -193,19 +227,22 @@ span{
 .hob-desc{
     width: 80%;
     position: relative;
+    font-size: 16px;
     left: 50%;
-    top: -550px;
+    top: -620px;
     bottom: 0;
     transform: translateX(-50%);
     opacity: 0;
     transition: 1s;
+    color: black;
 }
 .hob-desc p{
     font-size: 18px;
     font-family: cursive;
+    color: black;
 }
 hr{
-    background-color: beige;
+    background-color: rgb(187, 168, 168);
     height: 2px;
     width: 60%;
     margin: 15px auto;
@@ -232,12 +269,14 @@ hr{
 }
 .skills{
     width:100%;
-    padding:50px 0;
+    padding:50px 0;;
 }
 .ski-area{
     display: flex;
     flex-direction: column;
+    margin: 5% 5%;
     padding: 0 20%;
+    border: 100px;
 }
 .ski{
     position: relative;
@@ -246,88 +285,113 @@ hr{
 .ski-title{
     font-size: 35px;
     margin-bottom: 10px;
-    color: #6F8FAF;
+    color: goldenrod;
 }
 .bar{
     width: 100%;
-    background: #b7babc;
-    height: 40px;
+    background: rgb(155, 169, 172);
+    height: 35px;
     z-index: -1;
     border-radius: 100px;
     position: absolute;
+    transition: 1s;
 }
 .fill1{
     background: #6F8FAF;
-    height: 40px;
+    height: 101%;
     width: 70%;
     border-radius: 100px;
     display: flex;
-    justify-content: flex-end;
+    justify-content:  flex-end;
     align-items: center;
     padding-right: 30px;
-    overflow: hidden;
+    transition: 0.7s;
+}
+.fill1:hover{
+    transform: translateX(5px);
+    background-color: #4d7196;
+}
+.fill2:hover{
+    transform: translateX(5px);
+    background-color: #4d7196;
+}
+.fill3:hover{
+    transform: translateX(5px);
+    background-color: #4d7196;
+}
+.fill4:hover{
+    transform: translateX(5px);
+    background-color: #4d7196;
+}
+.fill5:hover{
+    transform: translateX(5px);
+    background-color: #4d7196;
+}
+.fill6:hover{
+    transform: translateX(5px);
+    background-color: #4d7196;
 }
 .fill2{
     background: #6F8FAF;
-    height: 40px;
+    height: 101%;
     width: 60%;
     border-radius: 100px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-right: 30px;
-    overflow: hidden;
+    transition: 0.7s;
 }
 .fill3{
     background: #6F8FAF;
-    height: 40px;
+    height: 101%;
     width: 90%;
     border-radius: 100px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-right: 30px;
-    overflow: hidden;
+    transition: 0.7s;
 }
 .fill4{
     background: #6F8FAF;
-    height: 40px;
+    height: 101%;
     width: 80%;
     border-radius: 100px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-right: 30px;
-    overflow: hidden;
+    transition: 0.7s;
 }
 .fill5{
     background: #6F8FAF;
-    height: 40px;
+    height: 101%;
     width: 85%;
     border-radius: 100px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-right: 30px;
-    overflow: hidden;
+    transition: 0.7s;
 }
 .fill6{
     background:#6F8FAF;
-    height: 40px;
+    height: 101%;
     width: 75%;
     border-radius: 100px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-right: 30px;
-    overflow: hidden;
+    transition: 0.7s;
 }
 .skill-per{
     font-size: 30px;
 }
 @media only screen and (max-width: 750px) {
     .ski-area{
-        padding: 0 5%;
+        padding: 0 10%;
     }
 } 
 .footer{
@@ -374,6 +438,15 @@ hr{
     margin: 10px;
     color: black;
 }
+.left a{
+    color: navy;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.left a:hover{
+    color: #4d7196;
+
+}
 .social{
     text-align: center;
 }
@@ -390,7 +463,7 @@ hr{
     transition: 0.5s;
 }
 .social .fa-brands:hover{
-    color: #ffdb58;
+    color: white;
     background: #3b5998;
     transform: translateY(-7px);
 }
