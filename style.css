@@ -29,7 +29,6 @@ html{
     color: lightgray;
     font-size: 20px;
     font-weight: 100;
-    color: white;
     font-weight:100;
 }
 .navi ul li::after{
@@ -40,13 +39,13 @@ html{
     position: absolute;
     left: 0;
     bottom: -5px;
-    transition: 0.4s;
+    transition: 0.5s;
 }
 .navi ul li:hover::after{
     width: 100%;
 }
  .logo{
-    width: 120px;
+    width: 100px;
     cursor: default;
     border-radius: 50%;
  }
@@ -57,16 +56,17 @@ html{
     height: 300px;
     border-radius: 50%;
     margin-top: 100px;
-    border-color: aqua;
-    border: 20px;
+    transition: 0.5s;
 }
+.mine:hover{
+    transform: translateY(-10px);}
 .about{
     width:100%;
     padding:60px 0;
 }
 .text{
     text-align: center;
-    padding-top: 70px;
+    padding-top: 50px;
 }
 .text p{
     margin: auto;
@@ -149,10 +149,14 @@ span{
     flex-basis: 50%;
     margin: auto;
 }
+.texts-img img:hover{
+    transform: translateX(-10px);
+}
 .texts-img img{
     width: 70%;
     border-radius: 20%;
     height: 500px;
+    transition: 0.5s;
 }
 .texts h1{
     text-align: left;
@@ -217,7 +221,7 @@ span{
     top: -390px;
     border-radius: 30px;
     cursor: pointer;
-    background: linear-gradient(grey,red);
+    background: linear-gradient(gray,red);
     opacity: 0;
     transition: 1s;
 }
@@ -249,7 +253,7 @@ hr{
     border: 0;
 }
 .hob:hover .hob-desc{
-    bottom: 40%;
+    /* bottom: 40%; */
     opacity: 1;
 }
 @media screen and (max-width:700px){
@@ -277,10 +281,17 @@ hr{
     margin: 5% 5%;
     padding: 0 20%;
     border: 100px;
+    transition: 0.5s;
 }
 .ski{
     position: relative;
     margin-bottom: 40px;
+}
+.ski-area:hover{
+    transform: translateY(-10px);
+    background-color: rgb(45, 45, 45);
+    margin: 5% 15% 15% 15%;
+    border-radius: 500px;
 }
 .ski-title{
     font-size: 35px;
@@ -296,6 +307,7 @@ hr{
     position: absolute;
     transition: 1s;
 }
+
 .fill1{
     background: #6F8FAF;
     height: 101%;
