@@ -217,7 +217,7 @@ span{
     height: 78%;
     width: 100%;
     position: relative;
-    top: -390px;
+    top: -79%;
     border-radius: 30px;
     cursor: pointer;
     background: linear-gradient(gray,red);
@@ -264,7 +264,7 @@ hr{
         font-size: 12px;
     }
     .over{
-        top: -243px;
+        top: -79%;
     }
     hr{
         margin: 5px auto;
