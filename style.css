@@ -11,7 +11,7 @@ html{
 }
 .navi{
     width: 100%;
-    margin: 0;
+    margin: 0px;
     padding: 30px 0;
     display: flex;
     align-items: center;
@@ -29,7 +29,6 @@ html{
     color: lightgray;
     font-size: 20px;
     font-weight: 100;
-    font-weight:100;
 }
 .navi ul li::after{
     content: '';
@@ -76,8 +75,8 @@ html{
     position: relative;
     display: inline-block;
     z-index: 1;
+    transition: 0.7s;
     cursor: default;
-    transition: 0.5s;
 }
 
 .text p::after{
@@ -88,7 +87,7 @@ html{
     left: 0px;
     top: -10px;
     z-index: -1;
-    transition: 0.5s;
+    transition: 0.7s;
     border-radius: 10px;
     background-color: #6F8FAF;
     
@@ -114,16 +113,16 @@ html{
     .content{
         padding-left: 50px;
         font-size: 15px;
-    }
-    .navi{
-        margin-left: 10px;
+        margin: 0;
     }
     .logo{
         width: 100px;
+        margin: 0;
     }
     .navi ul li{
         display: flex;
-        margin: 0;
+        margin: 20px 0;
+
     }
     .mine
     {
@@ -246,7 +245,7 @@ span{
     color: black;
 }
 hr{
-    background-color: rgb(187, 168, 168);
+    background-color: black;
     height: 2px;
     width: 60%;
     margin: 15px auto;
@@ -264,11 +263,14 @@ hr{
     .hob-desc p{
         font-size: 12px;
     }
+    .over{
+        top: -243px;
+    }
     hr{
         margin: 5px auto;
     }
-    .hob:hover .hob-desc{
-        bottom: 25%;
+     .hob-desc{
+        top:-380px;
     }
 }
 .skills{
@@ -488,4 +490,35 @@ hr{
         flex-basis: 100%;
         font-size: 15px;
     }
+}
+.ho{
+    text-align: center;
+}
+.ho a{
+    color: black;
+    font-size: 25px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.5s;
+    bottom: 50px;
+}
+.ho a::after{
+    content: '';
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    left: -15px;
+    top: -10px;
+    z-index: -1;
+    transition: 0.5s;
+    border-radius: 10px;
+    background-color: #e1ad01;   
+   
+}
+.ho a:hover::after{
+    transform: translateY(-5px);
+}.ho a:hover{
+    transform: translateY(-5px);
 }
