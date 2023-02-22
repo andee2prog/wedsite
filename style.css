@@ -253,7 +253,7 @@ hr{
     border: 0;
 }
 .hob:hover .hob-desc{
-    /* bottom: 40%; */
+    bottom: 40%;
     opacity: 1;
 }
 @media screen and (max-width:700px){
