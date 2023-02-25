@@ -130,7 +130,7 @@ html{
         height: 200px;
     }
 } 
-span{
+.content p{
     color: #ffdb58;
 }
 .text-box{
